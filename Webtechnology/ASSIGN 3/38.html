@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:8</title>
+    <script>
+        function fbc(){
+            var  Input=prompt("Enter range upto find fibonacci series :");
+
+        
+             let a=0;
+             let b=1;
+             let c=0;
+            for( let i=0;i<Input;i++)
+
+      {
+        let srt=document.getElementById("result").value+=" "+a+" ,";
+       
+        a=b+c;
+        b=c;
+        c=a;
+        if(a>Input)
+        break;
+        }
+        
+        }
+    </script>
+</head>
+<body>
+    <center>
+    
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <button onclick="fbc()">Click To Find fibonacci series</button>
+        <br>
+        <br>
+    <input type="text" id="result" style="width:500px;height: 50px; background-color: rgb(255, 149, 0);text-align: center; align-content: center;align-items: center; font-size: 25px; color: white;"
+    placeholder="Your fibonacci series display here" disabled>
+</center>
+    
+    
+</body>
+</html>

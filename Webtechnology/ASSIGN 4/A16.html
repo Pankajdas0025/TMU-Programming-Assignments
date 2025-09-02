@@ -1,0 +1,50 @@
+<!-- Design a web page using two image files which switch between one another as the
+mouse pointer and mouse over the images. Use the on Mouse Over and on Mouse
+Out event handlers.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (p)</title>
+    <style>
+        img{
+            margin: 150px 35px;
+            border: 2px solid black;
+            box-shadow: 2px 2px 15px black;
+            transition: 4s;
+        }img:hover{
+
+            transform: rotate(360deg);
+            box-shadow: 2px 2px 15px rgb(10, 220, 27);
+            border: 2px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+<center>
+<img src="Images/full-stack-img.jpg" height="280" width="500" id="img1">
+<img src="Images/TMU.png" height="250" width="500" id="img2" >
+</center>
+
+<script>
+
+
+var img1=document.querySelector("#img1");
+var img2=document.querySelector("#img2")
+
+
+img1.addEventListener("mouseover",()=>{img1.src="Images/TMU.png"; img2.src="Images/full-stack-img.jpg"; });
+img1.addEventListener("mouseout",()=>{ img1.src="Images/full-stack-img.jpg"; img2.src="Images/TMU.png";});
+
+
+
+img2.addEventListener("mouseout",()=>{ img2.src="Images/TMU.png"; img1.src="Images/full-stack-img.jpg";});
+img2.addEventListener("mouseover",()=>{ img2.src="Images/full-stack-img.jpg";img1.src="Images/TMU.png"; });
+
+
+
+
+</script>
+</body>
+</html>

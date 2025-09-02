@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:4</title>
+    <script>
+        function day(){
+        let input=prompt("Enter any year as per your choice:");
+        const d=new Date(input);
+        const days=["Sunday" ,"Monday","Tuesday","Wednesday","Thursday","Friday","saturday"];
+        let dindex=d.getDay();
+        weekday=days[dindex];
+        document.getElementById("result").innerHTML="The Day is " +weekday + " on 1st january "+input;
+
+
+        }
+    </script>
+</head>
+<body>
+    <center>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <button style="height: 30px; width: 100px; background-color: aqua;" onclick="day()">Find Day</button>
+ <br>
+ <br>
+ <div id="result" style="width:500px; height: 50px; background-color: blueviolet;
+    color: white; font-size: 25px; align-content: center;"></div>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q:6</title>
+	<style>
+			input[type="text"] {
+			width: 300px;
+			height: 40px;
+			font-size: 15px;
+			color: black;
+			text-align: center;
+
+		}      #result {
+            margin-top: 20px;
+            font-weight: bold;
+             color: green;
+             font-size: 25px;}
+	</style>
+	<script>
+		function check() {
+		let a= document.getElementById("Num1").value;
+		let b= document.getElementById("Num2").value;
+		let c= document.getElementById("Num3").value;
+	
+		if (a==""||b==""||c=="")
+		 {
+			window.alert("All side is required");
+			return false;
+		}
+		else if(a==b==c) {
+	document.getElementById("result").innerHTML="The Triangle is Equilateral";
+
+		}
+		else if(a==b||b==c||c==a){
+	document.getElementById("result").innerHTML="The Triangle is isosceles";
+			
+		} 
+		else {
+	document.getElementById("result").innerHTML="The Triangle is scalence";
+		}
+		}
+	</script>
+</head>
+<body>
+	
+	<center>
+		<h1>Determine the triangle type</h1>
+		<input type="text" id="Num1" name="input" placeholder="Enter 1st side length of triangle in cm"   autofocus>
+		<br><br>
+		<input type="text" id="Num2" name="input" placeholder="Enter 2nd side length of triangle in cm"   autofocus>
+		<br><br>
+		<input type="text" id="Num3" name="input" placeholder="Enter 3rd side length of triangle in cm"   autofocus>
+		<br>
+		<br>
+			 <input type="button" value="Submit"onclick="return check()">
+	 <div id="result"></div>
+	</center>
+
+</body>
+</html>

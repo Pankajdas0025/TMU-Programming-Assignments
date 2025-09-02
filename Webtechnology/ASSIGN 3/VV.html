@@ -1,0 +1,261 @@
+<html lang="en"><script src="chrome-extension://eanofdhdfbcalhflpbdipkjjkoimeeod/libs/extend-native-history-api.js"></script><script src="chrome-extension://eanofdhdfbcalhflpbdipkjjkoimeeod/libs/requests.js"></script><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        html,body{
+            height: 100vh;
+            width: 100%;
+        }
+        #main{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+
+        }
+        #nav{
+            height: 140px;
+            width:100% ;
+            display: flex;
+            align-items: center;
+            padding: 0 40px ;
+            justify-content: space-between;
+           
+        }
+        #nav-ptr2{
+            display: flex;
+            width: 55%;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        #nav h1{
+            font-size: 20px;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+
+        }
+        #nav i{
+            font-size: 20px;
+            margin-right: 5px;
+        
+        }
+        #nav h5{
+            font-size:17px;
+            text-transform: capitalize;
+            font-weight: 500;
+            
+        }
+        #nav img{
+            height: 50px;
+
+        }
+        #line{
+            height: 2px;
+            width: 60px;
+           background-color: red;
+        }
+
+
+        #content{
+            height: calc(100% - 240px); /*exact hieght*/
+            width: 100%;
+           position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #left{
+           /* background-color: rgb(255, 0, 0);*/
+            width:35% ;
+            height: 135%;
+            padding: 160px 50px ;
+            
+        }
+        #right{
+            width:35% ;
+            height: 100%;
+            padding-top: 200px;
+            
+          
+        }
+        #center{
+            width:28% ;
+            height: 100%;
+           
+            padding-top: 60px;
+        }
+        #left h1{
+           
+            font-size: 65px;
+            line-height: 70px;
+            font-weight: 700;
+        }
+        span{
+            color: red;
+            font-weight: 500;
+        }
+        #left p{
+            margin-bottom: 50px;
+            font-style: italic;
+            width: 70%;
+            line-height: 24px;
+        }
+        #left button{
+            cursor: pointer;
+            background-color: crimson;
+            padding: 20px 40px;
+            font-size: 17px;
+            border-radius: 60px;
+            display:flex;
+            align-items: center;
+            font-weight: 600;
+        }
+        #left button i{
+            margin-right:8px;
+        }
+        #left button:hover {
+            transform: scale(1.2); 
+            background-color: rgb(139, 0, 19); 
+        }
+
+        #center-bg{
+            background-color: blue;
+            width: 100%;
+            height: 88%;
+            border-top-left-radius: 1000px;
+            border-top-left-radius: 1000px;
+            border-top-right-radius: 1000px;
+            background-image: url(coke\ light.jpg);
+            background-size: 150%;
+            background-position: 30% 50%;
+            filter: blur(3px);
+        }
+        #content>img{
+            cursor: progress;
+            height: 110%;
+            position: absolute;
+            left:49%;
+            transform: translate(-50% , 0);
+         
+        }
+        #right-ele{
+      
+            width: 400px;
+        }
+        #elem1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+            opacity:0.6;
+            border-bottom: 1px solid white;
+        }
+        #elem1 h1{
+            font-size: 24px;
+            font-weight: 600;
+           
+
+        }
+        #elem1 i{
+            font-size: 20px;
+            cursor: pointer;
+            
+        }
+        #elem2 h1{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding: 15px;
+            color:rgb(139, 0, 19);
+        }
+        #elem2 p{
+            font-size: 12px;
+            width: 80%;
+            color: gray;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #content, #nav {
+            animation: fadeIn 1s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body __processed_73ffcf07-bd2f-4054-8352-075d98c1c0f9__="true">
+    <div id="main">
+        <div id="nav">
+            <h1><i class="ri-menu-5-line"></i>MENU</h1>
+            <div id="nav-ptr2">
+                <h5>Drinks</h5>
+                <h5>Categories</h5>
+                <h5>Buy Franchise</h5>
+                <div id="line"></div>
+                <img src="https://www.pngall.com/wp-content/uploads/13/Coca-Cola-Logo-PNG-Image-HD.png" alt="">
+                <div id="line"></div>
+                <h5>Stores</h5>
+                <h5>Contact</h5>
+                <h5>OUR STORY</h5>
+            </div>
+            <h1><i class="ri-search-2-line"></i></h1>
+        </div>
+        <div id="content">
+            
+            <div id="left">
+                <h1>Your Favourite <span>coke</span> just got reinvented.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus recusandae blanditiis.dita structure!!! </p>
+                <button id="testButton"><i><i class="ri-shopping-bag-3-line"></i></i>Test now</button>
+            </div>
+            <div id="center">
+                <div id="center-bg"></div>
+            </div>
+            <div id="right">
+                <div id="right-ele">
+                    <div id="elem1">
+                        <h1>Description</h1>
+                        <i class="ri-add-fill"></i>
+                    </div>
+                  
+                    <div id="elem1">
+                        <h1>Nutritients</h1>
+                        <i class="ri-add-fill"></i>
+                    </div>
+                   
+                    <div id="elem2">
+                        <h1>Ingredients</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates a cupiditate accusantium, voluptate laudantium soluta.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="file.png" alt="">
+           
+        </div>
+    </div>
+    <script>
+        //event listener 
+        document.getElementById('testButton').addEventListener('click', function(){
+        alert('Enjoy your COKE!!');
+        });
+    </script>
+
+
+</body></html>

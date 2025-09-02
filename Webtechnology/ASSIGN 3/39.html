@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q:9</title>
+	<style>
+			input[type="text"] {
+			width: 300px;
+			height: 40px;
+			font-size: 15px;
+			color: black;
+			text-align: center;
+
+		}  button{
+            margin-top: 20px;
+            height: 60px;
+     background-color: salmon;
+             font-size: 20px;}
+	</style>
+	<script>
+		//find the factorial of numbe
+		function fact() {
+		var number=document.getElementById("Num").value;
+		var fact=1;
+		for (var i =1;i<=number;i++) {
+			fact=parseInt(fact*i) ;
+
+		}window.alert("Factorial of number is  "  +fact);
+		}
+
+	//Check the number is armstrong or Not armstrong
+
+		function  arm() {
+		var number=document.getElementById("Num").value;
+		var len=number.length;
+	    var newNum=0;
+	    var r=0;
+	    const org=number;
+	    while(number!=0)
+	    {
+	    	r=number%10;
+	    	newNum=newNum+ Math.pow(r, len);
+	    	number=parseInt(number/10);
+
+	    } if (org==newNum) {
+	    	window.alert("The number is armstrong");
+	    }else 
+	    window.alert("The number is Not armstrong");
+}
+//Check the number is odd or even
+
+			function oe() {
+		var number=document.getElementById("Num").value;
+	if (number%2==0) {
+	alert("The number is Even");
+	}else
+alert("The number is Odd");
+
+		}
+		
+		
+	</script>
+</head>
+<body>
+<center>
+	<br><br><br>	<br><br><br>	<br><br><br>	<br><br><br>
+		<input type="text" id="Num" name="input" placeholder="Enter  a number" >
+		<br><br>
+		<button onclick="fact()">factorial</button>
+	    <button onclick="arm()">Armstrong</button>
+	    <button onclick="oe()">Odd&Even</button>
+</center>
+</body>
+</html>

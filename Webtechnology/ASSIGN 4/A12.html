@@ -1,0 +1,60 @@
+<!-- Write a JavaScript code that calculates the factorial of a Number using user
+defined function.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (l)</title>
+    <style>
+        .box
+        {
+            height: 300px;
+            width: 600px;
+            background-color:skyblue;
+            padding: 25px;
+            margin: 50px auto;
+            font-size: 45px;
+            color: aliceblue;
+        }input{
+            width: 400px;
+            height: 50px;
+            font-size: 20px;
+            padding: 1px 15px;
+        }input[type="submit"]{
+            width: 100px;
+            height: 55px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Factorial Calculator
+        <hr>
+        <input type="tel" placeholder="Enter a your name" max="5" id="num">
+        <input type="submit"  value="Find➡️" onclick="Factorial()">
+        <br>
+        <span style="font-size: 25px; color: rgb(27, 22, 79);" id="output"> </span>
+    </div>
+    <script>
+        function Factorial()
+        {
+        var a = document.querySelector("#num").value;
+        var b = document.querySelector("#output");
+        if(a == "")
+        {
+        b.innerText ="Enter any Number";
+        }
+
+        var fact=1;
+        for(var i=a; i>=1; i--)
+        {
+             fact=fact*i;
+        }
+        b.innerText ="👉The Factorial is :"+fact;
+    }
+    </script>
+</body>
+</html>

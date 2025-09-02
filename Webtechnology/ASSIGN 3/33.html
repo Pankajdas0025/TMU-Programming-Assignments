@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q:3
+	</title>
+	<style>
+		input[type="text"] {
+            padding: 5px;
+            margin-right: 10px;
+        }
+        input[type="button"] {
+            padding: 5px ;}
+      
+             #result {
+            margin-top: 20px;
+            font-weight: bold;
+             color: green;
+             font-size: 25px;}
+	</style>
+</head>
+<body>
+	<center>
+		<h1 ><mark>Add one each digits of the entered number</mark></h1>
+	<input type="text" placeholder="Enter a 5 digit number" id="numberinput">
+	 <input type="button" value="Submit" onclick="return Reverse()">
+	 <div id="result"></div>
+	 <script>
+	 	function Reverse() {
+
+	 		var n=document.getElementById("numberinput").value;
+	 		var numlen=n.length;
+	 		if (numlen!=5) {
+	 			alert('Enter a valid number (5 digits only) ${numlen}');
+	 			return false;
+	 		}
+	 		var numStr=n.toString();
+	 	
+	 		// 12391
+	 		 let result=0;
+	 		for(let i=0;i<numStr.length;i++)
+	 		{
+	 			let newDig=numStr[i];
+	 			newDig++;
+	 
+	 			  if (newDig === 10) 
+	    {
+                   newDig = 0;
+        }
+   
+      result=result*10+newDig;
+     
+    }
+	 		
+
+	 	
+	document.getElementById("result").innerHTML="New number is  "+result;
+
+	 	}
+	 </script>
+
+
+</body>
+</html>

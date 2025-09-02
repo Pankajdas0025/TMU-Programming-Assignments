@@ -1,0 +1,61 @@
+<!-- Apply local style rules and create internal and external Stylesheets to form the webpages.  -->;
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (i)</title>
+     <link rel="stylesheet" type="text/css" href="StyleA9.css">
+   <style>
+
+.container{
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    max-width:500px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1), -5px -10px
+    20px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid #6366f1;
+
+}
+   </style>
+</head>
+<body>
+     <div class="container">
+        <h1>Text to Speech Converter using SpeechSynthesisUtterance</h1>
+
+        <textarea name="textarea" class="text-area"
+        placeholder="Type something and listen the sound..." autofocus></textarea>
+
+
+        <div class="buttons">
+            <button id="speak-btn">Speak🔊</button>
+            <button id="stop-btn">Stop⏹️</button>
+        </div>
+    </div>
+
+    <script>
+        const textArea = document.querySelector('.text-area');
+const speakBtn = document.getElementById('speak-btn');
+const stopBtn = document.getElementById('stop-btn');
+
+speakBtn.addEventListener("click", () => {
+    if (textArea.value.trim() === "") {
+        alert('Please enter some text first!');
+        return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(textArea.value);
+    speechSynthesis.speak(utterance);
+});
+
+stopBtn.addEventListener("click", () => {
+    speechSynthesis.cancel();
+});
+
+    </script>
+</body>
+</html>

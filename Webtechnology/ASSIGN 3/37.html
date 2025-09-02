@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+          width:704px;
+          height:400px;
+          font-size: 30px;
+          padding-top: 20px;
+          overflow-wrap: break-word;
+           
+            
+        }h1{
+            background-color: aquamarine;
+            font-size: 30px;
+
+        }button{
+            height: 40px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <br>
+        <h1>Find prime number between 1 to 300</h1>
+        <br>
+        <br>
+        <button onclick="primeNum()">Find</button>
+        <br>
+        <br>
+        <h1 id="result"></h1>
+    </center>
+    <script>
+        function primeNum(){
+
+
+            for(let i=300; i>=1;i--)//outer loop
+        {
+            let isPrime=true;
+            for(let j=2; j<i;j++)//nner loop
+        {
+            if(i%j==0){
+             
+              isPrime=false;
+              break;
+        
+            }
+        
+            }
+            if(i>1&& isPrime){
+                document.getElementById("result").innerHTML+=i+"   ,";
+            }
+        }
+        
+        }
+        
+
+    
+    </script>
+</body>
+</html>

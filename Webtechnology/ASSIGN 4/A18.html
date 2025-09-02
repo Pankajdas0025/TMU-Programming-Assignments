@@ -1,0 +1,66 @@
+ <!-- Write a JavaScript code which asks the user for a name, then displays the name
+input into the prompt dialog box Along with a greeting message. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (r) </title>
+    <style>
+        .box
+        {
+            height: 100px;
+            width: 600px;
+            background-color:skyblue;
+            padding: 25px;
+            margin: 200px auto;
+            font-size: 45px;
+            color: aliceblue;
+
+        }input
+        {
+            height: 50px;
+            width: 60%;
+            padding-left: 25px;
+        }button
+        {
+            height: 55px;
+            width: 15%;
+            margin: 0px 15px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <input type="text" placeholder="Enter your Name" id="input"><button onclick="Greeting() ">Send</button>
+    <br>
+     <small id="result" style="font-size:15px; color: red;"></small>
+</div>
+
+    <script>
+        function Greeting()
+        {
+
+
+ var Name=document.querySelector("#input").value;
+ var Error= document.querySelector("#result");7
+    if(Name=="")
+    {
+Error.innerHTML="Please Enter Your Name ";
+setTimeout(()=>{Error.innerHTML=" ";},2000);
+
+    }
+    else if(Name.match(/[0-1]/))
+    {
+Error.innerHTML="Enter correct Name only Letters allowed !";
+    }
+
+    else
+    {
+        confirm("👋Hey "+Name+"\nWelcome to my Web-Page \n");
+    }
+}</script>
+</body>
+</html>

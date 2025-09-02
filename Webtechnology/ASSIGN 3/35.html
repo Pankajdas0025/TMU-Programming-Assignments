@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:5</title>
+    <script>
+        function fine(){
+           let ldays=prompt("Enter number of late days ");
+        if(ldays==0)
+          {
+            document.getElementById("result").innerHTML="Congratulation you have not to pay fine";
+            
+          }
+
+        else if(ldays>=1 && ldays<=5)
+           {
+            document.getElementById("result").innerHTML="Your late Fine for "+ldays+" days is only ₹50 Paise ";
+           }
+        else if(ldays>=6 && ldays<=10)
+           {
+            document.getElementById("result").innerHTML="Your late Fine for "+ldays+" days is only ₹1";
+           }
+        else{
+            document.getElementById("result").innerHTML="SORRY you lose your membership";
+           }
+        }
+    </script>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br>
+    <center>
+     <h1><mark>Program To Find fine for late return the Book</mark> </h1>
+	 <input type="button" value="Check Fine💸" style="height: 40px; width: 120px;
+     background-color: gainsboros; font-size:15px;" onclick="fine()">
+     <br>
+     <br>
+     <br>
+	 <div id="result" style="width: 500px; height: 50px; background-color: blueviolet;
+     align-content: center; font-size: 25px; color: white;">
+        m,m
+     </div>
+    
+</body>
+</html>

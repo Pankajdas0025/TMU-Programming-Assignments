@@ -1,0 +1,15 @@
+header
+{
+    background-color: gray;
+    height: 150px;
+    padding: 20px 10px;
+
+}header a
+{
+    padding-right: 40px;
+    padding-top: 50px;
+    color: white;
+}*
+{
+    padding:0 20px;
+}

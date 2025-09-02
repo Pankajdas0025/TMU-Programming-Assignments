@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q:1</title><link rel="" href="">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        input[type="text"], [type="button"]{
+            
+            margin-right: 10px;
+            height:40px;
+        }
+   
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+           font-size: 30px ;
+           background-color: aqua;
+           color: green;}
+    </style>
+    <script>
+        function Sum() {
+            // Get the value from the input box
+            var number =parseInt(document.getElementById("Input").value);
+
+            // Initialize sum variable
+            var sum = 0;
+            var r=0;
+
+           while(number!=0)
+            {
+                r=(number%10);
+                sum+=r;
+                number=parseInt(number/10);
+            }
+
+            // Display the result
+            document.getElementById("result").innerHTML = "Sum of digits: "+sum;
+           
+        }
+    </script>
+
+</head>
+<body>
+
+<center> 
+    <h1><mark>Sum of Digits Calculator</mark></h1>
+
+    <input type="text" id="Input" placeholder="Enter a number">
+    <input type="button" value="Submit" onclick="Sum()">
+
+    <div id="result" ></div>
+</center>
+
+   
+
+</body>
+</html>

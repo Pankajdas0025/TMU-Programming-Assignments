@@ -1,0 +1,51 @@
+<!-- Write a JavaScript code block, which checks the contents entered in a form’s text
+element. If the text entered is in the lowercase, convert to uppercase. Make use of
+function to Uppercase ().  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (o) </title>
+    <style>
+        .box
+        {
+            height: 300px;
+            width: 600px;
+            background-color:skyblue;
+            padding: 25px;
+            margin: 50px auto;
+            font-size: 45px;
+            color: aliceblue;
+        }input
+        {
+            height: 50px;
+            width: 80%;
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    To Uppercase
+    <br>
+    <small style="font-size: 20px; color: black;"> Out Mouse from input text to see result</small>
+    <hr>
+    <input type="text" placeholder="Enter some text in lowercase" id="input" onmouseout="ToUppText() " >
+</div>
+
+    <script>
+        function ToUppText()
+        {
+        var Text=document.querySelector("#input");
+        var Lcase=Text.value;
+        var Ucase= Lcase.toUpperCase();
+        Text.value=Ucase;
+
+
+        }
+
+    </script>
+</body>
+</html>
