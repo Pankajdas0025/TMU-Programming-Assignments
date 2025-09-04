@@ -1,0 +1,73 @@
+<!--Develop a HTML page which accept any mathematical expression, evaluate it
+and displays the result of evaluation Using JavaScript function.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (q) </title>
+    <style>
+        .box
+        {
+            height: 300px;
+            width: 600px;
+            background-color:skyblue;
+            padding: 25px;
+            margin: 50px auto;
+            font-size: 45px;
+            color: aliceblue;
+            border-radius: 25px;
+        }input
+        {
+            height: 50px;
+            width: 60%;
+            padding-left: 25px;
+        }button
+        {
+            height: 55px;
+            width: 15%;
+            margin: 0px 15px;
+
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    Calculator
+    <br>
+    <small style="font-size: 20px; color: black;">Use some mathematical expression i.e "50+80-30"</small>
+    <hr>
+    <input type="text" placeholder="Enter some mathematical expression" id="input"><button onclick="ExpResult() ">Find</button>
+    <br>
+     <small id="result" style="font-size: 20px;"></small>
+</div>
+
+    <script>
+        function ExpResult()
+        {
+            var output=document.querySelector("#result");
+try
+{
+    var Expression=document.querySelector("#input").value;
+     var Result= eval(Expression);
+
+     output.style.color="Green";
+     output.innerHTML="Result = "+Result;
+}
+catch
+{
+
+     output.style.color="red";
+     output.innerHTML="<b>Invalied Expression</b>";
+
+
+}
+
+
+        }
+
+    </script>
+</body>
+</html>

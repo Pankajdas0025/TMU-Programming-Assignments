@@ -1,0 +1,65 @@
+
+<!-- Design a web page by implementing the concept of class and ID selector. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (j)</title>
+    <style>
+        .box2
+        {
+            height: 200px;
+            width: 50%;
+            margin: 5% 20%;
+            background-color: rgb(133, 197, 237);
+            font-size: 35px;
+            padding: 25px;
+            color: white;
+        }#emailinput
+        {
+            height: 60px;
+            width: 60%;
+            font-size: 25px;
+            padding: 2px 15px;
+        }#sbutton
+        {
+            height: 65px;
+            width: 20%;
+            background-color: rgb(141, 215, 141);
+            color: white;border: none; outline: none;
+        }#sbutton:hover
+        {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+Subscribe NewsLetter
+<hr>
+<form onsubmit=" return Datasave(event) ">
+<input type="email" name="email" id="emailinput" placeholder="Enter your email here " required> <input type="submit" id="sbutton" value="SUBMIT">
+<br>
+<p style="font-size: 15px; color: green; display: none;">Thanks your Data submitted ! </p>
+</form>
+    </div>
+  <script>
+        function Datasave(event) {
+            // Prevent the default form submission behavior, which is to reload the page.
+            event.preventDefault();
+
+            // Select the success message paragraph using its ID.
+            let a = document.querySelector("p");
+
+            // Show the success message.
+            a.style.display = "block";
+
+            // Optional: Hide the message after a few seconds.
+            setTimeout(() => {
+                a.style.display = "none";
+            }, 5000); // Hides the message after 5 seconds.
+        }
+    </script>
+</body>
+</html>

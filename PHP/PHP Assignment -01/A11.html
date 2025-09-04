@@ -1,0 +1,37 @@
+<!-- Write the JavaScript code which asks a question and accepts an answer. The user
+has given three chances. In case of incorrect answer, the program prompts for an
+answer again. In case of correct answer, the program displays a message to Praise
+the answer.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1 (k)</title>
+</head>
+<body>
+
+    <script>
+       for( i=1;i<=3;i++)
+       {
+        let Answer=prompt("You have only 3 Attempt"+"\nAttempt:"+i+"\nWho is the CM of Bihar ? \n\n Nitish Kumar \n Pankaj Kumar \n Krishna Mohan \n Harsit Rana \n");
+
+        if(Answer.match("Nitish Kumar"))
+       {
+alert("✅Correct Answer!");
+break;
+       }
+       else
+       {
+        alert("Wrong Answer");
+       }
+       }
+       if(i>3)
+       {
+  alert("You reached out the Attempt ");
+       }
+
+    </script>
+</body>
+</html>
