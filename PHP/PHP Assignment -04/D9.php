@@ -24,7 +24,7 @@ input[type="submit"]{background-color: green; height: 30px; width: 74%; padding:
 <input type="text" name="username" id="" placeholder="Enter username" required>
 <input type="text" name="full_name" id="" placeholder="Enter full name" required>
 <input type="email" name="email_id" id="" placeholder="Enter email" required>
-<input type="text" name="password" id="" placeholder="Enter password" required>
+<input type="password" name="password" id="" placeholder="Enter password" required>
 <input type="date" name="DOB" id="" placeholder="Enter birth date " required>
 <input type="text" name="address" id="" placeholder="Enter your address" required>
 <input type="tel" name="mob_no" id="" placeholder="Enter mobile number" required>
