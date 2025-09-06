@@ -43,7 +43,7 @@ input:focus
     Name:<br>
     <input type="text" name="name" placeholder="Enter your name only Letters allowed" required><br>
     Address:<br>
-    <input type="email" name="address" placeholder="Enter your address" required><br>
+    <input type="text" name="address" placeholder="Enter your address" required><br>
     Mobile:<br>
     <input type="tel" name="mobile" placeholder="Mobile Number" maxlength="10" required><br>
     <input type="submit" value="SUBMIT"><br>

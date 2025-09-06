@@ -5,9 +5,9 @@ element of $roles array in prog3   -->
 <?php
 $roles =array ("Designer"," Developer"," Tester"," Team Leader","Subject Matter  Expert"," Data Analyst"," System Administrator", "Project Manager");
 
-echo current($people) . "<br>";
+echo current($roles) . "<br>";
 
-echo next($people) . "<br>";
+echo next($roles) . "<br>";
 
-echo end($people) . "<br>";
+echo end($roles) . "<br>";
 ?>

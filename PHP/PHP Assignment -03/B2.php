@@ -1,13 +1,15 @@
-<!-- Write a php program to sort the numeric array.  --
-
 
 <?php
 
-$Numbers=array(80,20,90,50,40);
+
+$Numbers = array(10, 50, 40, 60, 30 , 20);
+print_r($Numbers);
 sort($Numbers);
-foreach($Numbers as $i)
+
+echo" <br>Sorted Array <br>";
+foreach($Numbers as $num)
 {
-    echo "<br>$i";
+echo" $num ";
 }
 
 
