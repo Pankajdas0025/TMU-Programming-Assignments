@@ -1,32 +1,40 @@
+
 // Write a program to demonstrate the concept of method
 // overloading and overriding.
 
+public class Fifteen
+{
+    int add(int a ,  int b )
 
-public class Fifteen {
-    // Method to add two integers
-    public int add(int a, int b) {
-        return a + b;
-    }
-
-    // Overloaded method to add three integers
-    public int add(int a, int b, int c) {
-        return a + b + c;
-    }
-
-    // Method to demonstrate overriding
-    public void display() {
-        System.out.println("This is the original display method.");
-    }
-
-    public static void main(String[] args)
     {
-        Fifteen obj = new Fifteen();
+        return a+b;
+    }
 
-        // Demonstrating method overloading
-        System.out.println("Sum of two numbers: " + obj.add(5, 10));
-        System.out.println("Sum of three numbers: " + obj.add(5, 10, 15));
+    double add(double a , double b)
+    {
+        return a+b;
+    }
+}
 
-        // Demonstrating method overriding
-        obj.display();
+
+class OverrideExample extends Fifteen
+
+{
+
+    @Override
+    int add(int a , int b )
+    {
+        return a + b + 120 ;
+    }
+
+    public static void main (String [] args)
+    {
+Fifteen obj1 = new Fifteen();
+System.out.println("OverloadExample add(int) = "+ obj1.add(10 , 50));
+System.out.println("OverloadExample add(double) = "+ obj1.add(10.50, 50.50));
+
+
+OverrideExample obj2 = new OverrideExample();
+System.out.println("Overriden Example add(int) = "+ obj2.add(10 , 50));
     }
 }

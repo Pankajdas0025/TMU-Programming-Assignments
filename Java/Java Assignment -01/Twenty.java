@@ -1,18 +1,25 @@
 // Write program to demonstrate use of final keyword.
 
+public class Twenty
 
-import java.util.Scanner;
+{
+final int x = 100 ;
 
-public class Fourth
- {
-    public static void main(String[] args) {
-        Scanner number = new Scanner(System.in);
-        System.out.print("Enter first number: ");
-        int a = number.nextInt();
-        System.out.print("Enter second number: ");
-        int b = number.nextInt();
+final void display()
+{
+System.out.println("Method Final x : "+x);
+}
+}
 
-        final int sum = a + b; // Using final keyword to declare a constant
-        System.out.println("The Sum Is: " + sum);
-    }
+class TestFinal
+
+{
+
+   public static void main (String [] args)
+
+   {
+
+     Twenty t = new Twenty();
+    t.display();
+   }
 }

@@ -3,13 +3,26 @@
 // sum()
 
 
-public abstract class Eighteen {
-    // Abstract method to calculate the sum
-    public abstract void sum();
 
-    public static void main(String[] args) {
-        // Create an instance of the subclass to call the sum method
-        Eighteen obj = new EighteenImpl();
-        obj.sum();
+abstract class Eighteen
+{
+    abstract void sum(int a , float b , float c );
+}
+class Child extends Eighteen
+{
+
+
+    void sum(int a , float b , float c )
+
+    {
+
+    float result = a + b +c;
+    System.out.println("Sum is : "+ result);
+    }
+
+    public static void main (String [] args)
+    {
+         Child c = new Child();
+         c.sum(10 , 20.5f , 25.5f);
     }
 }

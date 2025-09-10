@@ -1,16 +1,29 @@
 // Write a program to demonstrate use of implementing
 // and extends interfaces.
 
+interface A{ void displayA();}
+interface B{ void displayB();}
 
-public class Nineteen implements InterfaceExample {
-    // Implementing the method from the interface
-    @Override
-    public void display() {
-        System.out.println("This is the implementation of the display method from the interface.");
-    }
+class Nineteen implements A,B {
 
-    public static void main(String[] args) {
-        Nineteen obj = new Nineteen();
-        obj.display(); // Calling the implemented method
-    }
+public void displayA()
+{
+System.out.println("Inheritance A Display ");
+}
+
+
+public void displayB()
+{
+System.out.println("Inheritance B Display ");
+}
+
+
+public static void main (String [] args)
+
+{
+Nineteen n = new Nineteen();
+n.displayA();
+n.displayB();
+}
+
 }
