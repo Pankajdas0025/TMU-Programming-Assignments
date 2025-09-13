@@ -23,7 +23,7 @@ return sum;
 
    varargs obj = new varargs();
 
-   System.out.print("The Sum Of Numbers are ; " +obj.Sum(1100,2,3,4));
+   System.out.print("The Sum Of Numbers are : " +obj.Sum(1100,2,3,4));
     }
 
 }
