@@ -14,3 +14,15 @@ echo" $num ";
 
 
 ?>
+
+
+
+<!-- second Method  -->
+
+<!-- <?php
+
+$Numbers = array(10, 50, 40, 60, 30 , 20);
+sort($Numbers);
+echo implode(" , " , $Numbers);
+
+?> -->

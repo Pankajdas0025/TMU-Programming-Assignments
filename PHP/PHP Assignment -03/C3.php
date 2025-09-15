@@ -9,7 +9,9 @@ Expert”,” Data Analyst”,” System Administrator”,
 <?php
 $roles = array ("Designer"," Developer"," Tester", "Team Leader","Subject Matter Expert"," Data Analyst"," System Administrator", "Project Manager");
 $slicedArray = array_slice($roles ,3 ,6 );
-print_r($slicedArray);
+// print_r($slicedArray);
+
+echo implode(" " ,$slicedArray);
 
 
 
