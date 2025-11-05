@@ -1,4 +1,4 @@
-// Write a program to implement the concept of
+// 2 . Write a program to implement the concept of
 // Exception Handling using throw keyword.
 class Throw
 
