@@ -1,4 +1,3 @@
-#"_/;0O. epository contains Teerthanker Mahaveer University (TMU) BCA Programming Assignments covering HTML, CSS, JavaScript, PHP, Java, C, and C++.
 
 ## It is specially designed for:<br>
 ✅ BCA students at TMU and other universities<br>
