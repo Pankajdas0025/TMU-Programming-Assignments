@@ -1,3 +1,6 @@
+// 4 .  Write a program to draw different shapes in an applet
+// using graphic class.
+
 import javax.swing.*;
 import java.awt.*;
 

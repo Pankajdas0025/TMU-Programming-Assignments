@@ -2,10 +2,7 @@
 data table using PHP.  -->
 
 
- <!-- Create a registration Form with (username,
-password, full_ name, DOB, email_ id, address,
-mob_ no) and insert it in register_ data table
-using PHP.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -40,7 +40,8 @@ class ExceptionDemo
 
         {
 
-            System.out.println("Array index is out of bounds");
+            System.out.println("Array index is out of bounds
+            ");
 
         }
 

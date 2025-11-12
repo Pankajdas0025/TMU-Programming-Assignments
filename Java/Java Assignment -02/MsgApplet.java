@@ -1,3 +1,6 @@
+// 5 . Write a program using Applet to display a message in
+// the Applet.
+
 import javax.swing.*;
 import java.awt.*;
 

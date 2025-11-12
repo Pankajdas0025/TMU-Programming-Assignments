@@ -1,4 +1,4 @@
-// Write a java program which will create a window and
+// 6. Write a java program which will create a window and
 // an empty area within that window (extends Frame
 // class)
 

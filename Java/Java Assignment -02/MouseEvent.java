@@ -1,4 +1,4 @@
-// Write a Java Program to demonstrate Mouse event.
+//8.  Write a Java Program to demonstrate Mouse event.
 
 import java.awt.*;
 import java.awt.event.*;

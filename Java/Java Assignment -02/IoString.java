@@ -1,4 +1,4 @@
-// Write a program to write a string in a text file using IO
+// 3. Write a program to write a string in a text file using IO
 // package.
 class IoString
 
