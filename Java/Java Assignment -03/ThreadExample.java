@@ -12,7 +12,7 @@ class MyRunnable implements Runnable {
     }
 }
 
-public class ThreadExample2 {
+public class ThreadExample {
     public static void main(String[] args) {
         Runnable r1 = new MyRunnable();
         Runnable r2 = new MyRunnable();
