@@ -60,7 +60,9 @@ class AwtEventsDemo extends Frame implements ActionListener, TextListener,
     }
 
     // ----- Action Event -----
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+
+    {
         lbl.setText("Button Clicked!");
     }
 
