@@ -1,10 +1,7 @@
 import java.awt.*;
 public class BorderLayoutExample extends Frame
-
 {
-
 BorderLayoutExample()
-
 {
     Frame F = new Frame();
 
