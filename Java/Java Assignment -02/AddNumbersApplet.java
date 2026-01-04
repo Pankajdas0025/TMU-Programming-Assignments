@@ -10,14 +10,18 @@ import java.awt.event.*;
 /* <applet code="AddNumbersApplet.class" width=400 height=200></applet> */
 
 public class AddNumbersApplet extends Applet implements ActionListener {
+    TextField num1 = new TextField(10);
+    TextField num2 = new TextField(10);
     Button add = new Button("Add");
     Label result = new Label("Result: ");
 
+    public void init() {
         add(new Label("Num1:")); add(num1);
         add(new Label("Num2:")); add(num2);
         add(add); add(result);
         add.addActionListener(this);
     }
+
 
     public void actionPerformed(ActionEvent e) {
         try {
@@ -27,4 +31,5 @@ public class AddNumbersApplet extends Applet implements ActionListener {
             result.setText("Enter valid numbers!");
         }
     }
+
 }

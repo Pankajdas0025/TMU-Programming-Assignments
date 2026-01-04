@@ -3,10 +3,10 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class MouseEvent extends Frame implements MouseListener {
+public class MouseEventDemo extends Frame implements MouseListener {
     TextArea ta;
 
-    MouseEvent() {
+    MouseEventDemo() {
         ta = new TextArea();
         ta.setBounds(20, 50, 350, 300);
         add(ta);
@@ -30,6 +30,6 @@ public class MouseEvent extends Frame implements MouseListener {
     public void mouseExited(MouseEvent e) {}
 
     public static void main(String[] args) {
-        new MouseEvent();
+        new MouseEventDemo();
     }
 }
