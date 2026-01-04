@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-class AwtEventsDemo extends Frame implements ActionListener, TextListener,
+class AwtEventsDemo extends Frame implements Phone. ActionListener, TextListener,
                                              ItemListener, MouseListener,
                                              MouseMotionListener, KeyListener,
                                              WindowListener {

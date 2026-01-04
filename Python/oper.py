@@ -1,5 +1,5 @@
-a= 5
-b = 2
+a= 0.5
+b = 0.2
 print (a+b)
 print (a*b)
 print (a/b)

@@ -1,13 +1,8 @@
 import java.awt.*;
-
 public class GridLayoutExample extends Frame
-
-{
-
-    GridLayoutExample()
+{  GridLayoutExample()
     {
 Frame f = new Frame();
-
 //Grid layout
 Button b1 = new Button("1");
 Button b2 = new Button("2");
@@ -27,21 +22,12 @@ add(b3);
 add(b4);
 add(b5);
 add(b6);
-
 setLayout(new GridLayout(2,3));
 setSize(300 , 300);
 setVisible(true);
-
-
     }
-
-
     public static void main (String [] args)
-
     {
-
         GridLayoutExample  ln = new GridLayoutExample();
-
     }
-
 }
