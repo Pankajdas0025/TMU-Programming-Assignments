@@ -13,5 +13,5 @@ int main()
 	float avg=sum/5;
 	cout<<"Sum of all numbers is : "<<sum<<endl;
 	cout<<"Average  of all numbers is : "<<avg;
-	
+
 }
