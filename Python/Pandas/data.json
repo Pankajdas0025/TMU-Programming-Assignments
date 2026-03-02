@@ -1,0 +1,46 @@
+[  {
+    "Name": "  rahul  ",
+    "Age": "twenty two",
+    "Salary": "30000",
+    "Date": "2026/03/02",
+    "City": "mumbai",
+    "Phone": "(987)654-3211",
+    "Active": "1"
+  },
+  {
+    "Name": "Priya ",
+    "Age": "",
+    "Salary": "₹45,000",
+    "Date": "March 3, 2026",
+    "City": "Kolkata",
+    "Phone": "9876543212",
+    "Active": "true"
+  },
+  {
+    "Name": "  Amit",
+    "Age": "25",
+    "Salary": "50,000 INR",
+    "Date": "03.04.2026",
+    "City": "  chennai  ",
+    "Phone": "98765-43213",
+    "Active": "No"
+  },
+  {
+    "Name": "  rahul  ",
+    "Age": "twenty two",
+    "Salary": "30000",
+    "Date": "2026/03/02",
+    "City": "mumbai",
+    "Phone": "(987)654-3211",
+    "Active": "1"
+  },
+  {
+    "Name": "Priya ",
+    "Age": "",
+    "Salary": "₹45,000",
+    "Date": "March 3, 2026",
+    "City": "Kolkata",
+    "Phone": "9876543212",
+    "Active": "true"
+  }
+]
