@@ -2,38 +2,20 @@
 
 using System;
 namespace a18;
-class Program
-{
-    static void Main()
-    {
+class Program{
+    static void Main(){
         Console.WriteLine("Enter a number:");
-        int number = Convert.ToInt32(Console.ReadLine());
-
-        if (IsNeonNumber(number))
-        {
-            Console.WriteLine(number + " is a NEON Number.");
-        }
-        else
-        {
-            Console.WriteLine(number + " is not a NEON Number.");
-        }
+        int number=Convert.ToInt32(Console.ReadLine());
+        if(IsNeonNumber(number)) Console.WriteLine(number+" is a NEON Number.");
+        else Console.WriteLine(number+" is not a NEON Number.");
     }
-
-    static bool IsNeonNumber(int num)
-    {
-        int square = num * num;
-        int sumOfDigits = SumOfDigits(square);
-        return sumOfDigits == num;
+    static bool IsNeonNumber(int num){
+        int square=num*num;
+        int sumOfDigits=SumOfDigits(square);
+        return sumOfDigits==num;
     }
-
-    static int SumOfDigits(int num)
-    {
-        int sum = 0;
-        while (num > 0)
-        {
-            sum += num % 10;
-            num /= 10;
-        }
+    static int SumOfDigits(int num){
+        int sum=0;
+        while(num>0){sum+=num%10;num/=10;}
         return sum;
-    }
-}
+}}

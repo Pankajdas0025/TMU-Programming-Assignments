@@ -11,34 +11,20 @@ A bank intends to design a program to display the denomination of an input amoun
 
 using System;
 namespace a20;
-class Program
-{
-    static void Main()
-    {
-        Console.WriteLine("Enter an amount (up to 5 digits):");
-        int amount = Convert.ToInt32(Console.ReadLine());
-
-        if (amount < 0 || amount > 99999)
-        {
-            Console.WriteLine("INVALID AMOUNT");
-            return;
-        }
-
-        Console.WriteLine("Denominations:");
-        int[] denominations = { 1000, 500, 100, 50, 20, 10, 5, 2, 1 };
-        int totalNotes = 0;
-
-        foreach (int denomination in denominations)
-        {
-            int count = amount / denomination;
-            if (count > 0)
-            {
-                Console.WriteLine(denomination + " X " + count + " = " + (denomination * count));
-                totalNotes += count;
-                amount -= denomination * count;
-            }
-        }
-
-        Console.WriteLine("Total number of notes: " + totalNotes);
-    }
-}
+class Program{
+    static void Main(){
+    Console.WriteLine("Enter an amount (up to 5 digits):");
+    int amount=Convert.ToInt32(Console.ReadLine());
+    if(amount<0||amount>99999){Console.WriteLine("INVALID AMOUNT");return;}
+    Console.WriteLine("Denominations:");
+    int[] denominations={1000,500,100,50,20,10,5,2,1};
+    int totalNotes=0;
+    foreach(int denomination in denominations){
+    int count=amount/denomination;
+    if(count>0){
+        Console.WriteLine(denomination+" X "+count+" = "+(denomination*count));
+        totalNotes+=count;
+        amount-=denomination*count;
+    }}
+    Console.WriteLine("Total number of notes: "+totalNotes);
+}}
